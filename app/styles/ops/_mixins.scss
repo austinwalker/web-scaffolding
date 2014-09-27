@@ -1,0 +1,17 @@
+// For vendor prefixes, either use AutoPrefixr or add mixins here
+
+// Font Size
+// Pass in 1/10th of the pixel value font size you want
+@mixin m-font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+// User select
+// To prevent unintentional text selection, mainly on mobile
+@mixin user-select($select) {
+  -webkit-user-select: $select;
+     -moz-user-select: $select;
+      -ms-user-select: $select; // IE10+
+          user-select: $select;
+}

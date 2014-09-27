@@ -1,0 +1,53 @@
+// These fonts come from Typekit (see .js in the index.html)
+
+%proxima {
+  font-family: "proxima-nova-soft",sans-serif;
+  font-style: normal;
+}
+
+%open {
+  font-family: "open-sans",sans-serif;
+  font-style: normal;
+}
+  
+%proxima-4 {
+  @extend %proxima;
+  font-weight: 400;
+}
+
+%proxima-5 {
+  @extend %proxima;
+  font-weight: 500;
+}
+
+%proxima-6 {
+  @extend %proxima;
+  font-weight: 600;
+}
+
+%proxima-7 {
+  @extend %proxima;
+  font-weight: 700;
+}
+
+%open-4 {
+  @extend %open;
+  font-weight: 400;
+}
+
+%open-7 {
+  @extend %open;
+  font-weight: 700;
+}
+
+// Alternatively, if you are hosting locally...
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon/fonts/icomoon.eot?-s04nwl');
+  src:url('../fonts/icomoon/fonts/icomoon.eot?#iefix-s04nwl') format('embedded-opentype'),
+    url('../fonts/icomoon/fonts/icomoon.woff?-s04nwl') format('woff'),
+    url('../fonts/icomoon/fonts/icomoon.ttf?-s04nwl') format('truetype'),
+    url('../fonts/icomoon/fonts/icomoon.svg?-s04nwl#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

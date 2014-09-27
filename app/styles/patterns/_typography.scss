@@ -1,0 +1,48 @@
+// Set all typographic elements
+
+body {
+  @extend %open-4;
+  @include m-font-size($fs-base);
+  color: $text-color;
+  line-height: 1.6em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend %proxima-6;
+  color: $red;
+  line-height: 1.2em;
+}
+
+h1 {
+  @include m-font-size($fs-jumbo);
+}
+
+h2 {
+  @include m-font-size($fs-largest); 
+}
+
+h3 {
+  @include m-font-size($fs-larger); 
+}
+
+h4 {
+  @include m-font-size($fs-large); 
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+pre {
+  @extend %open-7;
+
+}
+
+code {
+  color: $text-color;
+}

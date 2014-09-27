@@ -1,0 +1,14 @@
+// This is needed for the BS3 grid to work
+*, 
+*:before, 
+*:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+// Sets up the base for REM/PX font-size mixin
+html {
+  font-size: .625em !important;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
