@@ -5,11 +5,11 @@
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
+  letter-spacing: .1em;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  transition: background-color $transition,
-              color $transition;
+  transition: all $transition;
   
   &:hover {
     text-decoration: none;
