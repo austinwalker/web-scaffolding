@@ -1,17 +1,54 @@
 // For vendor prefixes, either use AutoPrefixr or add mixins here
 
-// Font Size
+// Box sizing
+// Source: http://getbootstrap.com/
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+     -moz-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+}
+
+// REM with fallback for IE8
 // Pass in 1/10th of the pixel value font size you want
-@mixin m-font-size($sizeValue: 1.6) {
+// Source: http://csstricks.com/
+@mixin font-size($sizeValue: 1.6) {
   font-size: ($sizeValue * 10) + px;
   font-size: $sizeValue + rem;
 }
 
 // User select
 // To prevent unintentional text selection, mainly on mobile
+// Source: http://getbootstrap.com/
 @mixin user-select($select) {
   -webkit-user-select: $select;
      -moz-user-select: $select;
       -ms-user-select: $select; // IE10+
           user-select: $select;
+}
+
+// Solid Color Buttons
+// Use in conjunction with a markup class that extends %btn (like .btn-sm)
+@mixin btn($color: $red) {
+  $shadow-height: .4em;
+  background-color: $color;
+  border: 0;
+  box-shadow: (darken($color,10%) 0px $shadow-height 0px);
+  color: $white;
+  margin-bottom: $shadow-height;
+
+  &:hover {
+    background-color: lighten($color,3%);
+  }
+  
+  &:active {
+    background-color: darken($color,2%);
+    border-bottom: 0;
+    box-shadow: (darken($color,10%) 0 0 0);
+    transform: translateY($shadow-height);
+    transition: all 0;
+  }
+  
+  &.active {
+    background-color: darken($color,7%);
+  }
 }

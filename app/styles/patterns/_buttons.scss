@@ -1,0 +1,62 @@
+%btn {  
+  $transition: .3s;
+  @extend %proxima-7;
+  @include user-select(none);
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color $transition,
+              color $transition;
+  
+  &:hover {
+    text-decoration: none;
+  }
+  
+  &:active {
+    transition: background-color 0;
+    text-decoration: none;
+  }
+}
+
+.btn-sm {
+  @extend %btn;
+  @include font-size(1.4);
+  padding: 1.15em 2.75em;
+}
+
+.btn-lg {
+  @extend %btn;
+  @include font-size(1.8);
+  padding: 1.3em 3.15em;
+}
+
+.btn-primary {
+  @include btn($red);
+}
+
+.btn-secondary {
+  @include btn($green);
+}
+
+.btn-ghost {
+  border: 2px solid $gray;
+  color: $gray;
+  
+  &:hover {
+    background-color: $gray;
+    color: $white;
+  }
+  
+  &:active {
+    background-color: darken($gray, 5);
+    color: $white;
+  }
+}
+
+
+
+
+

@@ -19,6 +19,7 @@ $gray-darker:            lighten(#000, 13.5%) !default; // #222
 
 $red:                    rgb(238, 46, 36);
 $green:                  rgb(93, 151, 50);
+$white:                  rgb(255, 255, 255);
 
 $body-bg:                rgb(243, 239, 233);
 $text-color:             rgb(92, 92, 92);
@@ -42,7 +43,7 @@ $fs-jumbo: 5;
 // $fw-lightest:
 // $fw-lighter:
 // $fw-light:
-// $fw-base: 400;
+   $fw-base: 400;
 // $fw-heavy:
 // $fw-heavier:
 // $fw-heaviest:
@@ -62,8 +63,7 @@ $fs-jumbo: 5;
 
 // $lh-tightest:
 // $lh-tighter:
-// $lh-tight:
-// $lh-baseSans:
-// $lh-base:
+   $lh-tight: 1.2em;
+   $lh-base: 1.6em;
 // $lh-loose:
 // $lh-looser:
