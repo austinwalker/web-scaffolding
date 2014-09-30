@@ -1,10 +1,25 @@
-// Set all typographic elements
+// Set your generic type elements here.  Elements that
+// are more specific, like .article-header-date, should be
+// set with their component
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  
+  &:hover {
+    color: $link-hover-color;
+  }
+}
 
 body {
   @extend %open-4;
   @include font-size($fs-base);
   color: $text-color;
   line-height: $lh-base;
+}
+
+code {
+  color: $text-color;
 }
 
 h1,
@@ -41,8 +56,4 @@ p {
 pre {
   @extend %open-7;
 
-}
-
-code {
-  color: $text-color;
 }

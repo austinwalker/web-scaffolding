@@ -1,5 +1,6 @@
-// These fonts come from Typekit (see .js in the index.html)
+// Source your fonts in this file.
 
+// These fonts come from Typekit (see .js in the index.html)
 %proxima {
   font-family: "proxima-nova-soft",sans-serif;
   font-style: normal;
@@ -40,7 +41,7 @@
   font-weight: 700;
 }
 
-// Alternatively, if you are hosting locally...
+// This font is hosted locally
 @font-face {
   font-family: 'icomoon';
   src:url('../fonts/icomoon/fonts/icomoon.eot?-s04nwl');
