@@ -11,7 +11,7 @@
 // REM with fallback for IE8
 // Pass in 1/10th of the pixel value font size you want
 // Source: http://csstricks.com/
-@mixin font-size($sizeValue: 1.6) {
+@mixin font-size($sizeValue: $fs-base) {
   font-size: ($sizeValue * 10) + px;
   font-size: $sizeValue + rem;
 }
@@ -26,7 +26,7 @@
           user-select: $select;
 }
 
-// Solid Color Buttons
+// Solid color buttons with raised edges
 // Use in conjunction with a markup class that extends %btn (like .btn-sm)
 @mixin btn($color: $red) {
   $shadow-height: .4em;

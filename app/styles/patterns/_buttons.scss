@@ -1,6 +1,5 @@
 %btn {  
   $transition: .3s;
-  @extend %proxima-7;
   @include user-select(none);
   border-radius: 5px;
   cursor: pointer;
@@ -21,26 +20,6 @@
   }
 }
 
-.btn-sm {
-  @extend %btn;
-  @include font-size(1.4);
-  padding: 1.15em 2.75em;
-}
-
-.btn-lg {
-  @extend %btn;
-  @include font-size(1.8);
-  padding: 1.3em 3.15em;
-}
-
-.btn-primary {
-  @include btn($red);
-}
-
-.btn-secondary {
-  @include btn($green);
-}
-
 .btn-ghost {
   border: 2px solid $gray;
   color: $gray;
@@ -54,6 +33,36 @@
     background-color: darken($gray, 5);
     color: $white;
   }
+}
+
+.btn-lg {
+  @extend %btn;
+  @extend %proxima-7;
+  @include font-size($fs-large);
+  padding: 1.3em 3.15em;
+}
+
+.btn-micro {
+  @extend %btn;
+  @extend %proxima-5;
+  @include font-size($fs-smaller);
+  border-radius: 2em;
+  padding: .25em 2em;
+}
+
+.btn-primary {
+  @include btn($red);
+}
+
+.btn-sm {
+  @extend %btn;
+  @extend %proxima-7;
+  @include font-size($fs-small);
+  padding: 1.15em 2.75em;
+}
+
+.btn-secondary {
+  @include btn($green);
 }
 
 
