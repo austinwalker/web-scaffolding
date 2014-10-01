@@ -42,6 +42,8 @@
 }
 
 // This font is hosted locally
+// If the client is still working on webfont hosting, the UX practice may
+// have a local file you can host temporarily
 @font-face {
   font-family: 'icomoon';
   src:url('../fonts/icomoon/fonts/icomoon.eot?-s04nwl');
