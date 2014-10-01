@@ -48,6 +48,8 @@ $fs-largest: 3;
 $fs-jumbo: 5;
 
 // Font Weight Scale
+// Depending on how your fonts are sourced, you might only need
+// 400 since different font weights can have differnt font family names
 
 // $fw-lightest:
 // $fw-lighter:
@@ -58,15 +60,23 @@ $fs-jumbo: 5;
 // $fw-heaviest:
 
 // Icons
+// Useful in a mixin to attach as pseudo elements (like buttons)
+// Values come from the Icomoon font you'll need to download
+
+// $icon-facebook:      "\e600";
+// $icon-instagram:     "\e601";
+// $icon-twitter:       "\e602";
+// $icon-bag:           "\e603";
 
 // Letter Spacing Scale
 
 // $ls-tightest:
 // $ls-tighter:
-// $ls-tight:
+// $ls-tight:           -.05em;
 // $ls-normal:
-// $ls-loose:
+// $ls-loose:           .05em;
 // $ls-looser:
+// $ls-loosest:
 
 // Line Height Scale
 
