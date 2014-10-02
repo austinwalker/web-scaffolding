@@ -10,7 +10,11 @@
   font-family: "open-sans",sans-serif;
   font-style: normal;
 }
-  
+
+// Since reproducing the font families requires multiple lines,
+// extends can be used to ensure the right weights and families
+// stick together
+
 %proxima-4 {
   @extend %proxima;
   font-weight: 400;

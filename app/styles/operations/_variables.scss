@@ -23,10 +23,10 @@ $gray:                   lighten(#000, 33.5%) !default; // #555
 $gray-dark:              lighten(#000, 20%) !default;   // #333
 $gray-darker:            lighten(#000, 13.5%) !default; // #222
 
-$red:                    rgb(238, 46, 36);
-$green:                  rgb(93, 151, 50);
-$white:                  rgb(255, 255, 255);
 $biege:                  rgb(243, 239, 233);
+$green:                  rgb(93, 151, 50);
+$red:                    rgb(238, 46, 36);
+$white:                  rgb(255, 255, 255);
 
 $body-bg:                $biege;
 $text-color:             rgb(92, 92, 92);
@@ -72,9 +72,9 @@ $fs-jumbo: 5;
 
 // $ls-tightest:
 // $ls-tighter:
-// $ls-tight:           -.05em;
+$ls-tight: -.05em;
 // $ls-normal:
-// $ls-loose:           .05em;
+$ls-loose: .05em;
 // $ls-looser:
 // $ls-loosest:
 
@@ -86,3 +86,6 @@ $fs-jumbo: 5;
    $lh-base: 1.6em;
 // $lh-loose:
 // $lh-looser:
+
+// Hidden for demo: 
+$red:                    rgb(238, 46, 36);

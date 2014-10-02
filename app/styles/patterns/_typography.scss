@@ -28,6 +28,7 @@ h3,
 h4,
 h5,
 h6 {
+  // Usually your headers will all be the same family
   @extend %proxima-6;
   color: $red;
   line-height: 1.2em;
